@@ -15,7 +15,7 @@ public class UserController {
 	public User getUser() {
 		User user = new User();
 		user.setUsername("李四11111");
-		user.setPasswork("0000");
+		user.setPassword("0000");
 		user.setAge(18);
 		return user;
 	}
