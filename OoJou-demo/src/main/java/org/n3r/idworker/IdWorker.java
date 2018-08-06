@@ -6,11 +6,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class IdWorker {
-    protected long epoch = 1288834974657L;
+    protected long epoch = 1288834974657L; // 时间起始标记点，作为基准，一般取系统的最近时间()
 //    protected long epoch = 1387886498127L; // 2013-12-24 20:01:38.127
     
 
-    protected long workerIdBits = 10L;
+    protected long workerIdBits = 10L;// 机器标识位数
     protected long maxWorkerId = -1L ^ (-1L << workerIdBits);
     protected long sequenceBits = 11L;
 
