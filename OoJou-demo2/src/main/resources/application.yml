@@ -1,0 +1,40 @@
+spring:
+#  profiles:
+#    active:
+#    - dev
+  devtools:
+    restart:
+      enabled: true #热部署生效
+      additional-paths: src/main/java
+#Spring boot Data JPA
+  jpa: 
+    hibernate:
+      ddl-auto: create
+    show-sql: true 
+# 数据连接池 配置数据源相关   使用阿里巴巴的 druid 数据源
+  datasource:
+    url: jdbc:mysql:///dbdemo
+    username: root
+    password: 
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      stat-view-servlet:
+        allow: true
+      
+## thymeleaf 静态资源配置
+#  thymeleaf:
+#    cache: false # 关闭缓存,上线生产环境需要改为true
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    mode: HTML5
+#    encoding: UTF-8
+#    servlet:
+#      content-type: text/html
+# tomcat的URI编码
+server:
+  tomcat: 
+    uri-encoding: UTF-8
