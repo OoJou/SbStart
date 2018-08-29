@@ -37,7 +37,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- 引入web的一些包，像res注解 -->
+		<!-- 引入web的一些包，像Rest..注解需要用到 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -85,10 +85,10 @@
 		</dependency>
 
 		<!-- 阿里巴巴 的druid数据库连接池 -->
-		<dependency>
+		<dependency><!-- 这个才是真的！！！删了个假的，没有加Springboot的druid -->
 			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-			<version>1.1.0</version>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.1.9</version>
 		</dependency>
 
 		<dependency>
@@ -116,17 +116,17 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid-spring-boot-starter</artifactId>
-			<version>1.1.9</version>
-		</dependency>
-
-		<dependency>
 			<groupId>org.mybatis.generator</groupId>
 			<artifactId>mybatis-generator-core</artifactId>
 			<version>1.3.2</version>
 			<scope>compile</scope>
 			<optional>true</optional>
+		</dependency>
+
+		<!-- 引入 redis 依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 	</dependencies>
 

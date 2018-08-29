@@ -17,6 +17,7 @@ import lombok.Data;
 public class User {
 
 	private String username;
+//	在json序列化时将java bean中的一些属性忽略掉，序列化和反序列化都受影响。
 	@JsonIgnore
 	private String password;
 	private int age;

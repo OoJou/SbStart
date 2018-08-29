@@ -30,6 +30,7 @@ import tk.mybatis.mapper.common.MySqlMapper;
 /**
  * 继承自己的MyMapper
  * 这个不是自动生成的！！！！！！！！！！
+ * 自动生成的SysUserMapper继承MyMapper
  */
 public interface MyMapper<T> extends Mapper<T>, MySqlMapper<T> {
     //TODO

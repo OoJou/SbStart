@@ -16,6 +16,7 @@
 	<br/>
 	用户生日：<input th:value="${user.birthday}"/>
 	<br/>
+	<!-- Date类型输出不一样，#dates.format进行转换 -->
 	用户生日：<input th:value="${#dates.format(user.birthday, 'yyyy-MM-dd')}"/>
 	<br/>
 </div>
